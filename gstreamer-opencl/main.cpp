@@ -2,6 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 
 #ifdef __APPLE__
 #include <OpenCL/opencl.h>
@@ -136,5 +137,7 @@ int main(void) {
 	free(A);
 	free(B);
 	free(C);
+
+	std::cin.get();//pause
 	return 0;
 }
